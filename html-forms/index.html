@@ -13,6 +13,53 @@
   </head>
 
   <body>
-    <main></main>
+    <main>
+      <form>
+        <!-- Name field -->
+          <div>
+            <label for="name">Name:</label>
+            <div>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              class="resizedTextbox"
+            />
+          </div>
+          </div>
+          <!-- Email field -->
+          <div>
+            <label for="location">Email:</label>
+            <div>
+            <input
+              id="location"
+              type="text"
+              name="zipcode"
+              autofocus="on"
+              maxlength="5"
+              class="resizedTextbox"
+              required
+            />
+          </div>
+          </div>
+          <!-- Message field -->
+        <div>
+          <label for="form-message">Your message:</label>
+          <div>
+          <textarea
+            id="form-message"
+            name="message"
+            autofocus="on"
+            required
+            maxlength="200"
+            class="resizedMessageBox"
+          ></textarea>
+        </div>
+        <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+      </div>
+      </form>
+    </main>
   </body>
 </html>
